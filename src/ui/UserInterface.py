@@ -27,4 +27,8 @@ class UserInterface:
 
             if content.startswith('ping'):
                 await self.COMMAND_HANDLER.ping(message)
+
+            if content.startswith('info'):
+                await self.COMMAND_HANDLER.info(message)
+
             
