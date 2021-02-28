@@ -1,16 +1,26 @@
 {
     "villager": {
-        "class_details": "",
-        "actions_details": ""
+        "default": {
+            "title": "Aldeão",
+            "info": "Você é um Aldeão. Durante o dia, você discute com a aldeia sobre quem pode ser um lobisomem e decide alguém para matar."
+        },
+        "doctor": {
+            "title": "Médico",
+            "info": "Durante a noite, você acorda e seleciona um jogador que não poderá ser morto pelos lobisomens naquela noite. Você não pode proteger a mesma pessoa duas noites seguidas."
+        }
     },
 
     "werewolf": {
-        "class_details": "",
-        "actions_details": ""
+        "default": {
+            "title": "Lobisomem",
+            "info": "Durante a noite, você acorda e, junto com seus amigos lobisomens, decide uma vítima para matar. Durante o dia, tente agir como um aldeão comum para não ser morto."
+        }
     },
 
-    "doctor": {
-        "class_details": "",
-        "actions_details": ""
+    "independent": {
+        "jester": {
+            "title": "Coringa",
+            "info": "Seu objetivo é ser votado para morrer durante o dia."
+        }
     }
 }

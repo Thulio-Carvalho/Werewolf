@@ -1,7 +1,9 @@
 import discord
 import os
+from ui.UserInterface import UserInterface
 
 TOKEN = os.environ['WEREWOLF_TOKEN']
+UI = None
 
 client = discord.Client()
 
@@ -13,7 +15,16 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.startswith('Hello'):
-        await message.channel.send('Hello!')
 
-client.run(TOKEN)
+    await UI.handle_message(message)
+
+
+def main():
+    global UI
+
+    UI = UserInterface()
+
+    client.run(TOKEN)
+
+if __name__ == '__main__':
+    main()
